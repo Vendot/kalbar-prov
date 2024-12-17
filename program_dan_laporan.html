@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analitik Kunjungan</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style/index.css">
+    <link rel="icon" href="img/logo-akcaya.png" type="image/x-icon" style="height: 100%;">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <!-- Fontawesome Link for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script src="js/humberger.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="img/logo-akcaya.png" alt="Akcaya" />
+                <span>PEMERINTAH PROVINSI <br> KALIMANTAN BARAT</span>
+            </div>
+            <nav>
+                <!-- Tombol Menu Hamburger -->
+                <div class="hamburger" id="hamburger">
+                    &#9776; <!-- Simbol menu hamburger -->
+                </div>
+                <!-- Daftar Menu Navigasi -->
+                <ul class="nav-list" id="nav-list">
+                    <li><a href="beranda.html">Beranda</a></li>
+                    <li><a href="informasi_publik.html">Informasi Publik</a></li>
+                    <li><a href="profil_pemerintah.html">Profil Pemerintah</a></li>
+                    <li><a href="program_dan_laporan.html" style="color: #009B4F;">Program & Laporan</a></li>
+                    <li><a href="agenda.html">Agenda</a></li>
+                    <li><a href="informasi_kontak.html">Informasi Kontak</a></li>
+                    <li><a href="analitik_pengunjung.html">Analitik Pengunjung</a></li>
+                    <li><a href="#"><i class="fa-regular fa-circle-user" style="color: #00753c;font-size: 25px;"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Kunjungan Web -->
+        <div class="program-laporan">
+            <section class="header">
+                <h1>Program dan Laporan</h1>
+                <nav class="title">
+                    <ul>
+                        <li><a href="page1_proglap" class="ajax-link-proglap">Dokumen Perencanaan</a></li>
+                        <li><a href="page2_proglap" class="ajax-link-proglap">Transparansi Pengelolaan Anggaran Daerah</a></li>
+                    </ul>
+                </nav>
+            </section>
+
+            <section id="section-program-laporan">
+                <!-- For application in js -->
+            </section>
+
+            <script src="Program & Laporan/js/content.js"></script>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer">
+            <img src="img/logo-akcaya.png" alt="Akcaya">
+            <h4>PEMERINTAH PROVINSI <br> KALIMANTAN BARAT</h4>
+        </div>
+
+        <div class="footer-content">
+            <div class="section">
+                <h5>Hubungi Kami</h5>
+                <div class="icon">
+                    <a href="#">
+                        <img src="Beranda/img/footer/email.png" alt="email">
+                        <p>diskominfo@kalbarprov.go.id</p>
+                    </a>
+                </div>
+                <div class="icon">
+                    <a href="#">
+                        <img src="Beranda/img/footer/phone.png" alt="telepon">
+                        <p>(+62561) - 736541</p>
+                    </a>
+                </div>
+                <br>
+                <h5>Alamat</h5>
+                <div class="icon">
+                    <a href="#">
+                        <img src="Beranda/img/footer/location.png" alt="location">
+                        <p>Jl. Jenderal Ahmad Yani, Bangka <br> Belitung Laut, Kec. Pontianak Tenggara, <br>Kota Pontianak, Kalimantan Barat 78124</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="section">
+                    <h5>Denah Lokasi</h5>
+                    <div class="box-maps">
+                    <!-- Iframe maps -->
+                    </div>
+                </a>
+            </div>
+
+            <div class="section">
+                <h5>Ikuti Kami di</h5>
+                <div class="akun-list">
+                    <a href="#"><img src="Beranda/img/footer/instagram.png" alt="instagram"></a>
+                    <a href="#"><img src="Beranda/img/footer/tik-tok.png" alt="tik-tok"></a>
+                    <a href="#"><img src="Beranda/img/footer/facebook.png" alt="facebook"></a>
+                    <a href="#"><img src="Beranda/img/footer/x.png" alt="x-twitter"></a>
+                    <a href="#"><img src="Beranda/img/footer/youtube.png" alt="youtube"></a>
+                </div>
+                <div class="masukan">
+                    <a href="javascript:void(0);" onclick="openPopupMasukan()"><h5>Sampaikan Masukan Anda</h5></a>
+                </div>
+                
+                <!-- Pop Up Masukan-->
+                <div class="overlay-regis" id="divOne">
+                    <div class="wrapper-regis">
+                        <div class="footer">
+                            <div class="content-footer">
+                                <img src="img/logo-akcaya.png" alt="Akcaya">
+                                <div class="text">
+                                    <h5>Formulir Saran dan Perbaikan</h5>
+                                    <p>Layanan Pemerintah Provinsi Kalimantan Barat</p>
+                                </div>
+                            </div>
+                            <div class="close-bar">
+                                <a class="close" href="javascript:void(0);" onclick="closePopupMasukan()">&times;</a>
+                            </div>
+                        </div>
+                        <div class="content-popup">
+                            <div class="container-popup">
+                                <form>
+                                    <label><p>Nama</p></label>
+                                    <input placeholder="Masukan nama Anda" type="text"> <br>
+                                    <label><p>Email</p></label>
+                                    <input placeholder="Masukan alamat email" type="text"> <br>
+                                    <label><p>Masukan</p></label>
+                                    <textarea placeholder="Sampaikan saran dan masukan Anda di sini"></textarea>
+                                    <input type="submit" value="Kirim">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <script src="Beranda/js/footer-regis-masukan.js"></script>
+                </div>
+            </div>
+
+            <!-- Pop Up Regis ChatBot-->
+            <div class="overlay-regis" id="divTwo">
+                <div class="wrapper-regis">
+                    <div class="footer">
+                        <div class="content-footer">
+                            <img src="img/logo-akcaya.png" alt="Akcaya">
+                            <div class="text">
+                                <h5>ChatBot</h5>
+                                <p>Layanan Pemerintah Provinsi Kalimantan Barat</p>
+                            </div>
+                        </div>
+                        <div class="close-bar">
+                            <a class="close" href="javascript:void(0);" onclick="closePopupRegisChatbot()">&times;</a>
+                        </div>
+                    </div>
+                    <div class="content-popup">
+                        <div class="container-popup">
+                            <form>
+                                <label><p>Nama</p></label>
+                                <input placeholder="Masukan nama Anda" type="text"> <br>
+                                <label><p>Email</p></label>
+                                <input placeholder="Masukan alamat email" type="text"> <br>
+                                <label><p>Judul Percakapan</p></label>
+                                <input placeholder="Masukan judul percakapan" type="text"> <br>
+                                <input type="button" value="Kirim" href="javascript:void(0);" onclick="openPopupChatbot()">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <script src="Beranda/js/footer-regis-chatbot.js"></script>
+            </div>
+
+            <!-- Pop Up ChatBot-->
+            <div class="overlay-chatbot" id="divThree">
+                <div class="wrapper-chatbot">
+                    <div class="footer">
+                        <div class="content-footer">
+                            <img src="img/logo-akcaya.png" alt="Akcaya">
+                            <div class="text">
+                                <h5>ChatBot</h5>
+                                <p>Layanan Pemerintah Provinsi Kalimantan Barat</p>
+                            </div>
+                        </div>
+                        <div class="close-bar">
+                            <a class="close" href="javascript:void(0);" onclick="closePopupChatbot()">&times;</a>
+                        </div>
+                    </div>
+                    <div class="content-popup">
+                        <div class="container-popup">
+                            <div class="chat" id="chat"></div>
+                            <input type="text" class="input" id="input" placeholder="Type your message here...." />
+                            <div class="button-chatbot">
+                                <button class="button" id="button"><i class="fa-solid fa-circle-arrow-up"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script src="Beranda/js/footer-chatbot.js"></script>
+                <script src="Beranda/js/chatbot.js"></script>
+            </div>
+        </div>
+
+        <!-- Ikon Scroll dan Chat Bot -->
+        <div class="scroll-chat">
+            <div class="icon icon-up">
+                <a href="#" ><img src="Beranda/img/footer/up.png" alt="Up"></a>
+            </div><br>
+            <div class="icon">
+                <a href="javascript:void(0);" onclick="openPopupRegisChatbot()"><img src="Beranda/img/footer/chatbot.png" alt="ChatBot"></a>
+            </div>
+            <script src="Beranda/js/footer-regis-scroll.js"></script>
+        </div>
+    </footer>
+    
+</body>
+</html>
